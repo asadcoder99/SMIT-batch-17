@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 35px;
+}
+
+.search-box {
+  display: flex;
+  width: 50%;
+}
+
+.search-box input {
+    height: 40px;
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+}
+
+.search-box button {
+  padding: 7px 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.menu-icon-1 i{
+  font-size: 28px;
+  cursor: pointer;
+  border: none;
+  margin-right: 10px;
+}
+
+
+.menu-icon i {
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Video grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.video-card h3 {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.video-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 10px 10px;
+}
+
+/* Responsive */
+@media only screen and  (max-width: 768px) {
+  .search-box {
+    width: 60%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .video-card h3 {
+    font-size: 14px;
+  }
+
+  .video-card p {
+    font-size: 12px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .menu-icon i {
+    font-size: 18px;
+  }
+}
+
+

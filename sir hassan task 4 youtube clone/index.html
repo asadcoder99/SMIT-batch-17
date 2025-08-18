@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="left-section">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVsAAACRCAMAAABaFeu5AAAAwFBMVEX////NIB8AAADKAADMGBbNHBvWV1b239/LCAXknZwNDQ2srKzi4uLwx8fxzMx5eXnQMTDMEA47OzvuwMCWlpZubm7egoLprq7jl5eBgYFnZ2fnqKjLDQu1tbX67Ozhj4/abm7019fAwMD99vbceHfruLj56eny09PVUlHOJiXWXV3u7u7Ozs6hoaHV1dXSQ0KLi4tSUlLp6enPLy7YZmXSQ0Pdfn7WW1ojIyM4ODhHR0cvLy8YGBhaWlonJyfROjlcLpmwAAAONUlEQVR4nO2da3vaOBOGobIDtCHBpQuksBzCmTabtEDS7WH5///qtcHYeqSRbAPGFi/Ph16NbYx9I8uj0cyoULg4DYfd7mRSKg0Gg+n0rlqtuxp7anpq77T9/3art7tavZtOp4NBqTSZdLvd4TDre8hSw0lpcFcdu6Ravcaov1rM1pvl3GJxVHYV5zhrvtw8zxar/qjRa1XazXH1blCaXCL37qDerPRe+zfrORDodBzHsSzL9lQ8pbZndM/snr/TgV+j+HzTH/UqzfpgkjWWYzVo92u7FtdxPIgnJXgYdZe4j3vZr0yzBnSo7kbuDTjZ81TJtlzG/WrWmA5Qc55nroEcZrezRpVQ9SIzAOxWNrPGWeNKoOHCGLKebDYzxoSYMidrXAllMUO63aZRjXYnmxnR61ZY1qAOEutlDS5ahqI1AW7dVLQu3JybC0MD+9pALN/j4DfTLARe1jprfDpVze0RPLF61gA12hjcI7iy51kDVMvwZpvr19nMyhrOkbI3WSNUaWJ6s3Ub7iBriAr1OlmjOVpOI2uICuVgXuFY2SxriLQG5ncJbqdwlzVGUtAlePOAcZXk3m3+gyk8J/tO4R3ok3y3H/CIlNnyxq311oivBHDtTS/8XC8Fc9ou7m7mBcj9lO/2MxzwOV20Xb5LYM0En0zQl1hv/AcXKdh8vlPhn6hmifv/PoZctMADlsjVnITtDf/BtzTY+q3iPbB7FK85kv1JBY+2uWyd0e7c2Ck8iNf8BLu/HUUuWtD5mct23+Fiw/whXvM32P3hKHIJCZnLtsj8OV986L8I16zfe2KVLoatb+E+6F5WX2HnxyPZRWl8MWz9lxni+wsvGXvjpyPZRalShgs0l21nPyepswT+hX23x6GLFI4ADGa7NxQKf6n5DfUvulNrBfdpMFtr5p/9Uf3c4y5iRHxaPcP402C24cQOAPzDfzG+5/45El2kLGSb1pg3fbbFwM34R9nh/tZ0xSkIATmN6R0njGQbVu9AB7O9SYftPqjxbyD4Nfze77BDGrOdWl0BkIPZHXBsSUj9SHDfZ2G7DwHBNxbXqyqhp6OSlpDI9uD7PgvbIAviJ4+QGyCgBZEy2UJB/2CbxTaIAEH/dxj/DJuFUUUKGl8Q2+A9jP1q4Ge8pTenpvblsC23gi/4Rb6z0L+YNtlCoaWdPzeKLTeP/omH+Hu/FfyLYPemI/2kl1ls+8EX4NP/3d8KG1OezfHU197mGdieLm/VWoTf8J7AiA4yynU7/H57+53YfqD0TShltnaZsXmtyPT5QdY21XT7T0f3O9jP4TeAL9G3CKCjkGaAv74Eltu3T/Ro+OlzqD/hq/D7H247P3Gsn87WsLUVw4gOvzlgRrG12bxS2v49HTHVT2x32LpS3Y0KJtXWRvMz8JGiOLOz2wb+RcF1i6+5d+9+ULM99/wR4QHYAXHHzw9ka9dgV7AH41sC5zDBls25iOTuulyk1GGtLnzRpKGmy18t3O/Wz4ijNXj0H98Rkm20OGzfU1BOxRZcEGq2tphesyIMFpsRIXTDleqa+asFDk8SwF9KZqHuDWVry/Fbz1K3YDl05OdYkfjCuAxUILmdKgf/Iu+6RbeZ+LHD2Q6zYes4cmqN6DUqOhtVtm6Jhsv47gMoeRvAv8jNRihaLQE3IVvphs7CdsawE91JCAO2asQxviYkXMiFgrivr8I4mCMgxN6hXo5hGxEynhLbNZkQhs+Q7ehyzKfUdbMSd8TfAiPxb19fdGiFqYmEbCNM1pTYlgqkIAQvIsqeSpGFj4BZ8K/gXwyRYVijJIhgSMg2Iq45JbYKNXkzOSrInjDM8f0I3oMvcv8rc6HEO9ATso2YlzkvW76DioyxJ64cvxs60kcAEFpXODlJiHfpJGQbkVl2XraFcEjbiU4ulxsupkfCy+sBSQcHCSTvn55E2twZE7KNSD9Pke20NWqIk8phhyukP5cqr+7R+HJrSpcuZPDxTtxf0K8Gh6D7xvcFKAPKErLVTzukx7ZaY2XHYQ7aYoEVxrtdXI0Yc5wOY1AWTDYfBbbgmyEYiocE7hv4HbjRmRlsR759aiHDoCmWK/zm/dyIzaDlPoudghBcoXxPhU0R3nfBeALsst/hCY1g2w8PB0sr6P2xhQbhKQyQSymHYuCKii19xH/hZhgFh79nQrZyp3UOtmFcDTbQ4AsYuTUM+dpKeleIbBVGQDiShQbKhYKAxzG0hQ1jy83DFMIuFE/OMVQw3+8VgtnwTUVQAS8v59F95LeHRoVhbLEl7ke9Vp/fyk1FY4crXntZDBSk2YazOcCQ84bDjxIyN4wtfRq0brnoa/TxiPmVEluMo/HFDWPB6OWMLWAb+h5MY2tTp8GHu6ViK44eJLbQLuV2iP3qB8Xnwn7YNLYWyRYMVS6EAtmK86gSW7JT4Fy3YN6qYvJCA/cy2MLgVcl2FcmWmFLg7NV4bMO4sctgCydRshVjK2S2GBS6Fe/u/r9kC85CNVthxldmS3i+eW/3le0RbAsfJbb83ivbY9iKMR0YiH9l2+MWigDXYwy2kr8GAvGvbJWKwbbwQ2ALO69slYrDFhN4hUD8K1ul4rAV6nxgkNeVrVJx2Gozp69slYrFFq0w3HeJbG+ubK9sr2yD76YSvbNjm81c5JXtle3ls62/KupBigEKZGXs7NhmE7OUjG2LKeqYSrEfV7aJ2cYtK00uRZAd22xiRNNiSy24lR1bMrbdWLbUKzA7ttnEjafFllr+NDu22eQ7pMWWSpHIjm02OVCHs3U6nCQ7gcpR0bEF5+7J2WaUu3coW6fRC9WS7Fsqay07tpnl8x7GFmPtxPgE3OvryhZPE3OeV4yrIXN7sutvhZKBeWEbL67mtGxV8bcHx4MdXJsiXbYHxYMJMZG+dGxVcYwQI3pwHGPE8lrpsy1Sp0HHgDL+Vrh2eqEtHVt49lXxt2FfkZSt+Fydmy15Goy/VbIV7ASMQd9Lx/YxTrsNtyvYqjLcC6MDa1idiK3Awz8Nxo1zflBkuxTYrgqEdGyhxaneZZH5DhB9zrPVr12WmK2QAhbJFnNJ9qdBSpw/SZvv4LwWCOnYQq46VyEJbLOoPB0Mi+LZYin3o9kK7pJItpgDtR/J4Nqa3PgGr0dgS+cA69gqktOx5GC4mWYL5wC2+slIDdsldZuYXKeu+xHm7YJ7JUhEx/YZ/BTYysW6GnQ9by1byC4NXmYQi8Ol9EG+2p4tVt4HtvpEdA1bXLZ1t4eJT6WCbXVfDkwwEwKvHBphQaeADgPx0unFTrVs6WKu//EbuaBSqqCbgBbY6p2MGrYd2HXjvhItedV3VT5vqbalawve7GAWROg6X7fpv2LZK9E/Rs9gatliMdff2wDSW+gR+AgyTL72DpZj/nm2+oI1mrp2crnsjXxv6hz/8dqrhidMwgRZenYZdzSL7tFzoV2Kwx7SDaZnKza7358/a4JKhbJBv36+k8Wz1TvCdGwFx8iEckLpalMMS9InwqKm0tRXdyI6YuSUU+oKItgSySYoPs78Mepgga3eWaNjS9ZKEpSw7kf4jhOS/ylJ1WXpMix6tsJScrL4cqORxW1EtkudQ0HHlpr4E5WQLUtwesmrbzvkcRFsFfnUe+HSJYpjlGy1RVo1bMuCubW/5Ti1LhXi36uCBSFrJTZbe00eF8FWV9ZOKNsoLizn6wkSrYCtdtCrYctX8uVkxxnzjgqkYIzY6dMH+ZIDgughbyRbIk0qlFCAWMr68Vqt2lejn+nT1RYmu7dNPH8C3YoRlzgO0VzKVopluyPZ4igMJK7BRaQCPmn8YPqBmZatbKoPN04stgtGNfqWMPzWrJs0KROV1+jfIpot/ai7BplcNvtFPMYby6nZaiNrdGyFkZmr7tyK5wdbWGXZHyg3RXks4mtAlbokI5ZisaUrMpFra6D1+37bsNVstQautt54WXgIq94dx2RbdIqCpT8kZpfYjDRZK9FVREPhE08e4pUMF8l+pEuOf+Hh+ravsia2XD0jNtsia/F7d3WpYtXE9mqsCSPYgUPZK+4wWpq7rW7o1qCoMvjywEkqxRzoFhwx9+qlzYI2fr8vq/3lnv8KOFi3CgGr1jm1RX8ke9s3vmHLLwPeaXEfqAZGiL3mzlRdb39OrpZ4aaQoxewe1K9yeEuVueJIXBX8EN1+ePj88+efh6eINeO+Pr28PMVbREq76gsUw5ddvRZb95rjZmsW7qPr5GNZfZ+O3WGb10q7MqrpFiFwGKv1e5V2u9W4KTPiJbZTuRV9q2fXEas27Pgw1jl4nRHbcXHpeqXdUVan7H6Lo5vwJwPtMpfqcTRLkUVdM5GYkmGkFMPErBURl2+GEi0iej5FxDKaITLOLgfSx38YoXg+zAwUURjbBNHzkHlQpBGUd9n5tBI8UYslGKUYpd+zkvFvs7y+yTy1zIYbudBGpjK6x7Xz3GwNHz/k10jYaWQu3A49CZkjrU31KujWOcuLNmbCdZa57mx9zUzsFjrKhQ/zpVfzPLks933tXtWyNkI/d7I0IQz5U4PFTajPXjabxYmlzI+6DaZcPztXsliNDvbItcYLb3Yxz12v7TC2ildDLH+qtt68+duydmb1/LJty1sijhVHYzOsA5WGg3Gl8RZEKJQ7jmO5ss9F23ZJWo7jeNPn+7iGzWLUak7N5sprOBlM6+N2pdUY9RezdQ2iOLjAEK/KybYkmrWTHcpHxck/xmPnlUkpl+UTWsvn2aI/arQqzXH9bkDmU1ykhsPupFQaTO+q1fp43Gy3K5VWr9doNEaj/mq1WLzNZuvNprZczovuc1z2m71dnM+Xy9pm87ye3SwWq1W/P3ptNHq9VqXddgnWq3fTQanUHV5Oy7wc/Q9IkHZdEFmizwAAAABJRU5ErkJggg==" alt="Logo" class="logo" />
+      <h2></h2>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <div class="menu-icon-1">
+      <i class="fa-solid fa-microphone"></i>
+    </div>
+
+    <div class="menu-icon">
+      <i class="fa-solid fa-bell"></i>
+    </div>
+    
+    <div class="menu-icon">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="menu-icon">
+    <i class="fa-solid fa-circle-user"></i>
+    </div>
+    
+  </header>
+
+  <main class="video-grid">
+    <div class="video-card">
+      <img src="https://img.youtube.com/vi/5bk5v5s6ohg/sddefault.jpg" alt="Video Thumbnail">
+      <h3>Create a Chess Board Using Only HTML | No External CSS Needed | Easy Beginner Project</h3>
+      <p>Muhammad Hasan • 1.2M views</p>
+    </div>
+    <div class="video-card">
+      <img src="https://img.youtube.com/vi/rSTWMI-BoCs/sddefault.jpg" alt="Video Thumbnail">
+      <h3>Create a Website in Just 12 Minutes Using Pure HTML | Beginner-Friendly Tutorial</h3>
+      <p>Muhammad Hasan • 890K views</p>
+    </div>
+    <div class="video-card">
+      <img src="https://img.youtube.com/vi/IxWpYUz2_IM/sddefault.jpg" alt="Video Thumbnail">
+      <h3>🔹 How to Create a GitHub Account | Signup, Login & Dashboard Overview 🚀</h3>
+      <p>Muhammad Hasan • 500K views</p>
+    </div>
+    <div class="video-card">
+      <img src="https://img.youtube.com/vi/Iz4NbG3kyrc/sddefault.jpg" alt="Video Thumbnail">
+      <h3>🔥 Modern Login Form Design | HTML & CSS Tutorial for Beginners</h3>
+      <p>Muhammad Hasan • 750K views</p>
+    </div>
+     <div class="video-card">
+      <img src="https://img.youtube.com/vi/pNM4gJqhRiI/sddefault.jpg" alt="Video Thumbnail">
+      <h3>Responsive Contact Form Tutorial | HTML & CSS for Beginners 🌐 </h3>
+      <p>Muhammad Hasan • 750K views</p>
+    </div>
+     <div class="video-card">
+      <img src="https://img.youtube.com/vi/9qn5SWkf8SA/sddefault.jpg" alt="Video Thumbnail">
+      <h3>👉 Periodic Table Using HTML | Full Tutorial for Beginners </h3>
+      <p>Muhammad Hasan • 750K views</p>
+    </div>
+     <div class="video-card">
+      <img src="https://img.youtube.com/vi/fqcDKG2QxNE/sddefault.jpg" alt="Video Thumbnail">
+      <h3>👉 Simple Calculator Using HTML CSS & JavaScript | Beginner-Friendly Web App | Complete Tutorial</h3>
+      <p>Muhammad Hasan • 750K views</p>
+    </div>
+     <div class="video-card">
+      <img src="https://img.youtube.com/vi/mnwjCuaZsbk/sddefault.jpg" alt="Video Thumbnail">
+      <h3>Navbar Design | HTML & CSS Navigation Bar Tutorial</h3>
+      <p>Muhammad Hasan • 750K views</p>
+    </div>
+     <div class="video-card">
+      <img src="https://img.youtube.com/vi/asrXR2huR_Y/sddefault.jpg" alt="Video Thumbnail">
+      <h3>👉 Build a Resume Website Using Only HTML | Step-by-Step Tutorial for Beginners</h3>
+      <p>Muhammad Hasan • 750K views</p>
+    </div>
+     <div class="video-card">
+      <img src="https://img.youtube.com/vi/p5J8p56fMlQ/sddefault.jpg" alt="Video Thumbnail">
+      <h3>How to Deploy Code on Vercel | (Step-by-Step) Vercel Deployment Guide for Beginners</h3>
+      <p>Muhammad Hasan • 750K views</p>
+    </div>
+     <div class="video-card">
+      <img src="https://img.youtube.com/vi/mnwjCuaZsbk/sddefault.jpg" alt="Video Thumbnail">
+      <h3>Navbar Design | HTML & CSS Navigation Bar Tutorial</h3>
+      <p>Muhammad Hasan • 750K views</p>
+    </div>
+     <div class="video-card">
+      <img src="https://img.youtube.com/vi/JfGzn_OcerA/sddefault.jpg" alt="Video Thumbnail">
+      <h3>Make Calculator Interactive with JavaScript | HTML CSS JS Project for Beginners | Part 2</h3>
+      <p>Muhammad Hasan • 750K views</p>
+    </div>
+     <div class="video-card">
+      <img src="https://img.youtube.com/vi/hBJP9EQ1D1k/sddefault.jpg" alt="Video Thumbnail">
+      <h3>Create a Calculator UI Using HTML & CSS | Modern Calculator Design for Beginners | Part 1</h3>
+      <p>Muhammad Hasan • 750K views</p>
+    </div>
+    
+  </main>
+</body>
+</html>
+

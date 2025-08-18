@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+table{
+    /* border: 2px solid white; */
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+td{
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    text-align: center;
+}
+.white{
+    background-color: lightgoldenrodyellow;
+}
+.black{
+    background-color: burlywood;
+}

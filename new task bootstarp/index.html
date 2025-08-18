@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class=" container-fluid">
+            <img class="logo-image"
+                src="data:image/png;base64,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"
+                height="60px" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Grocreys</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+
+                </ul>
+                <form class="d-flex search-input" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://img.lazcdn.com/us/domino/662e895f-9916-44a0-ad7c-c31e9a544558_PK-1976-688.jpg_2200x2200q80.jpg_.webp"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.lazcdn.com/us/domino/61ba2018-fa6a-453d-9ec0-f8d3fed6fc4b_PK-1976-688.jpg_2200x2200q80.jpg_.webp"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.lazcdn.com/us/domino/764ef9ca-7931-4ed3-9c45-84db78fdf565_PK-1976-688.jpg_2200x2200q80.jpg_.webp"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+ <h1>NEW ARRIVALS</h1>
+
+    <div class="card-section">
+        <div class="card" style="width: 18rem; margin-top: 10px; border: none;">
+            <img src="https://m.media-amazon.com/images/I/81eNLtDYjoL._AC_SX679_.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Cabinat's</h5>
+                <p class="card-text">SICOTAS Buffet Cabinet Sideboard with Storage, Rattan Accent Cabinet with Doors Drawer, Boho Credenzas Farmhouse Buffet Table Console Coffee Bar Cabinets for Entryway Living Room, Natural Oak</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+
+        </div>
+        <div class="card" style="width: 18rem; margin-top: 10px; border: none;">
+            <img src="https://m.media-amazon.com/images/I/714Fk915K1L._AC_UY218_.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Laptop Lenovo</h5>
+                <p class="card-text">Lenovo IdeaPad 1i Laptop with Microsoft 365 Home and Business • 12GB RAM • 1TB Cloud Storage and 256GB SSD • Intel Core • 15 Anti-Glare Screen • WiFi-6 • 11HR Battery • Windows 11 • w/o Earbuds</p>
+                <a href="#" class="btn btn-primary">Buy Now </a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-top: 10px; border: none;">
+            <img src="https://m.media-amazon.com/images/I/71s8nikz44L._AC_UL320_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Kitchen item's</h5>
+                <p class="card-text">CHEFMAN Multifunctional Digital Air Fryer+ Rotisserie, Dehydrator, Convection Oven,
+                    17 Touch Screen Presets Fry, Roast, Dehydrate, Bake, XL 10L Family Size, Auto Shutoff, Large
+                    Easy-View Window, Black.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-top: 10px; border: none;">
+            <img src="https://m.media-amazon.com/images/I/810H7ed9agL._AC_UL320_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Vegitable's Cutter</h5>
+                <p class="card-text">Fullstar Vegetable Chopper and Spiralizer - Food Chopper with Container, Fruit
+                    Slicer, Kitchen Gadgets & Accessories, Home Essentials (4 in 1, White)</p>
+                <a href="#" class="btn btn-primary">Buy Now </a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-top: 10px; border: none;">
+            <img src="https://m.media-amazon.com/images/I/71HSeyE+PpL._AC_UL320_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Oil Spray Jug</h5>
+                <p class="card-text">TrendPlain 16oz/470ml Glass Olive Oil Sprayer for Cooking – 2 in 1 Olive Oil
+                    Dispenser Bottle for Kitchen Gadgets and Air Fryer Accessories, Salad, BBQ - Black</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-top: 10px; border: none;">
+            <img src="https://m.media-amazon.com/images/I/71jEpAbsrDL._AC_UL320_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Beauty Cream </h5>
+                <p class="card-text">4 Pcs Clay Facial Mask Set - Turmeric, Vitamin C, Green Tea, Dead Sea Mud, and Rose Clay Skin Care Mask for Deep Cleansing, Moisturizing, and Refining Pores - 240g</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-top: 10px; border: none;">
+            <img src="https://m.media-amazon.com/images/I/61SMMJdRKrL._AC_UL320_.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Water Absorbing Stone</h5>
+                <p class="card-text">2 PCS Water Absorbent Diatomite Coasters (9.5" x 5.5"), Grooved Design, Water Absorbing Stone Used for Hand Soaps & Plants & toiletries in The Modern Home</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-top: 10px; border: none;">
+            <img src="https://m.media-amazon.com/images/G/01/home/merch/2023Q2_SSCategory_EE_AccentFurniture_1000x1000._CB537540625_UC216,216_.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Stand For TV & Dinng table</h5>
+                <p class="card-text">mopio Brooklyn Mid-Century Modern TV Stand, for TVs up to 50” / 59" Waveform Panel, Sleek Curved Profile with Adjustable Shelf and Sturdy Box Frame Leg (Golden Oak, 57")</p>
+                <a href="#" class="btn btn-primary">Buy Now </a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-top: 10px; border: none;">
+            <img src="https://m.media-amazon.com/images/G/01/home/merch/2023Q2_SSCategory_EE_DecorAccents_1000x1000._CB537540625_UC216,216_.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Floor Lamp </h5>
+                <p class="card-text">Dimmable Industrial Floor Lamps for Living Room, Gold Tree Standing Tall Lamps with 3 Elegant Teardrop Cage Head & 800 Lumens LED Bulbs for Bedroom Office</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-top: 10px; border:none;">
+            <img src="https://m.media-amazon.com/images/G/01/home/merch/2023Q2_SSCategory_EE_BasketsHampers_1000x1000._CB537540625_UC216,216_.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Hand Made Basket</h5>
+                <p class="card-text">Mkono Woven Storage Basket Decorative Natural Rope Basket Wooden Bead Decoration for Blankets,Toys,Clothes,Shoes,Plant Organizer Bin with Handles Living Room Home Decor, Jute, 16" W × 13.8"L</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-top: 10px; border: none;">
+            <img src="https://m.media-amazon.com/images/G/01/home/merch/2023Q2_SSCategory_EE_Hardware_1000x1000._CB537540625_UC216,216_.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Door Press Handle</h5>
+                <p class="card-text">Kwikset Pismo Interior Passage Door Knob, Handle For Closet and Hallway Doors, Non-Locking Doorknob in Matte Black, with Microban Protection, Square Rose</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-top: 10px; border: none;">
+            <img src="https://m.media-amazon.com/images/I/81YWAIsVoPL._AC_UL320_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Sink For Bathroom & Kitchen</h5>
+                <p class="card-text">SunnyPoint NeverRust Deluxe Kitchen & Bathroom Sink Sponge Holder Organizer with Adhesive Mount - Additional Suction Cup Included – Sponge & Brush NOT Included – 7.4 x 3.3 x 2.75 Inch, BLK</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+ <footer>
+        <div class="foot-panel1">
+            Back On Top
+        </div>
+
+        <div class="foot-panel2">
+            <ul>
+                <p>Get To Know Us</p>
+                <a href="">Career's</a>
+                <a href="">Blog</a>
+                <a href="">About Our Site</a>
+                <a href="">Invester Relations</a>
+                <a href="">Ecommerce Device</a>
+                <a href="">Ecommerce Science</a>
+            </ul>
+            <ul>
+                <p>Get To Know Us</p>
+                <a href="">Career's</a>
+                <a href="">Blog</a>
+                <a href="">About Our Site</a>
+                <a href="">Invester Relations</a>
+                <a href="">Ecommerce Device</a>
+                <a href="">Ecommerce Science</a>
+            </ul>
+            <ul>
+                <p>Get To Know Us</p>
+                <a href="">Career's</a>
+                <a href="">Blog</a>
+                <a href="">About Our Site</a>
+                <a href="">Invester Relations</a>
+                <a href="">Ecommerce Device</a>
+                <a href=""> EcommerceScience</a>
+            </ul>
+            <ul>
+                <p>Get To Know Us</p>
+                <a href="">Career's</a>
+                <a href="">Blog</a>
+                <a href="">About Our Site</a>
+                <a href="">Invester Relations</a>
+                <a href="">Ecommerce Device</a>
+                <a href="">Ecommerce Science</a>
+            </ul>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+<div class="foot-panel4">
+    <div class="pages">
+        <a href="">Conditions Of Use</a>
+        <a href="">Privacy Notice</a>
+        <a href="">Your Ads Privacy Choices</a>
+        <div class="copyright">
+            &copy; 2025, ecommerce web.com, Inc and Its affilliates | Asad Web Developer 
+        </div>
+    </div>
+</div>
+
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
