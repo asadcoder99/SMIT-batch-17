@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="d-flex justify-content-between align-items-center p-3 bg-white shadow-sm">
+    <div class="d-flex align-items-center gap-3">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+           alt="logo" width="40" height="40">
+      <div class="inputBox">
+        <input type="text" placeholder="Search Facebook">
+      </div>
+    </div>
+
+    <div class="boxIcons">
+      <i class="fa-solid fa-house icon"></i>
+      <i class="fa-solid fa-tv icon"></i>
+      <i class="fa-solid fa-store icon"></i>
+      <i class="fa-solid fa-users icon"></i>
+      <i class="fa-solid fa-gamepad icon"></i>
+    </div>
+
+    <div class="d-flex align-items-center gap-3">
+      <i class="fa-brands fa-facebook-messenger icon"></i>
+      <i class="fa-solid fa-bell icon"></i>
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="profile" class="profilePic">
+    </div>
+  </nav>
+
+  <!-- Layout -->
+  <div class="container-fluid" style="margin-top:80px;">
+    <div class="row">
+
+      <!-- Left Sidebar -->
+      <div class="col-12 col-md-3 p-3 d-none d-md-block">
+        <div class="sidebar-option"><i class="fa-solid fa-user-friends"></i> Friends</div>
+        <div class="sidebar-option"><i class="fa-solid fa-users"></i> Groups</div>
+        <div class="sidebar-option"><i class="fa-solid fa-store"></i> Marketplace</div>
+        <div class="sidebar-option"><i class="fa-solid fa-clock"></i> Memories</div>
+      </div>
+
+      <!-- Feed Section -->
+      <div class="col-12 col-md-6 p-3">
+        <!-- Create Post Box -->
+        <div class="box bg-white p-3 rounded shadow-sm">
+          <div class="d-flex align-items-center gap-3">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="profilePic">
+            <!-- Button trigger modal -->
+            <button class="form-control text-start" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              What's on your mind?
+            </button>
+          </div>
+        </div>
+
+        <!-- Posts will appear here -->
+        <div id="postsContainer" class="mt-3"></div>
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="col-12 col-md-3 p-3 d-none d-md-block">
+        <h6>Contacts</h6>
+        <div class="contact d-flex align-items-center gap-2">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" class="profilePic">
+          <span>Ayesha</span>
+        </div>
+        <div class="contact d-flex align-items-center gap-2">
+          <img src="https://randomuser.me/api/portraits/men/56.jpg" class="profilePic">
+          <span>Fahad</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Create Post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <textarea id="postText" class="form-control mb-2" placeholder="What's on your mind?" rows="3"></textarea>
+          <input type="file" id="postImages" class="form-control" multiple>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary" onclick="createPost()">Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

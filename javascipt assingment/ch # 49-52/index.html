@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Assignment #49–52 (Events)</title>
+</head>
+<body>
+  <h1>Assignment #49–52 — JavaScript (Events)</h1>
+
+  <!-- ============================
+       Q1 — Signup Form
+  ============================ -->
+  <section style="border:2px solid black; padding:10px; margin:15px 0;">
+    <h2>Q1: Signup Form and Display Data</h2>
+
+    <form id="signupForm">
+      <label>Name:</label>
+      <input type="text" id="name"><br><br>
+
+      <label>Email:</label>
+      <input type="email" id="email"><br><br>
+
+      <label>Password:</label>
+      <input type="password" id="password"><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h3>Form Data:</h3>
+    <div id="result"></div>
+  </section>
+
+  <!-- ============================
+       Q2 — Read More Button
+  ============================ -->
+  <section style="border:2px solid black; padding:10px; margin:15px 0;">
+    <h2>Q2: Read More / Read Less Example</h2>
+
+    <p id="text">
+      This is a short description about an item...
+      <span id="more" style="display:none;">
+        Here is the full detailed information about the item that appears when you click Read More.
+      </span>
+    </p>
+
+    <button id="btn">Read More</button>
+  </section>
+
+  <!-- ============================
+       Q3 — Student Table
+  ============================ -->
+  <section style="border:2px solid black; padding:10px; margin:15px 0;">
+    <h2>Q3: Student Table with Edit and Delete</h2>
+
+    <form id="studentForm">
+      <input type="text" id="sname" placeholder="Name" required>
+      <input type="number" id="sage" placeholder="Age" required>
+      <input type="text" id="sgrade" placeholder="Grade" required>
+      <button type="submit">Add Student</button>
+    </form>
+
+    <h3>Student Data Table</h3>
+    <table border="1" id="studentTable">
+      <tr>
+        <th>Name</th><th>Age</th><th>Grade</th><th>Actions</th>
+      </tr>
+    </table>
+
+    <!-- Hidden Edit Form -->
+    <div id="editForm" style="display:none; margin-top:10px;">
+      <h3>Edit Student</h3>
+      <input type="text" id="editName">
+      <input type="number" id="editAge">
+      <input type="text" id="editGrade">
+      <button id="saveBtn">Save Changes</button>
+    </div>
+  </section>
+
+
+  <script src="app.js"></script>
+ 
+</body>
+</html>

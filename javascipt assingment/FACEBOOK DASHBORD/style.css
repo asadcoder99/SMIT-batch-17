@@ -1,0 +1,82 @@
+body {
+  background: #f0f2f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.inputBox {
+  width: 250px;
+}
+.inputBox input {
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  font-size: 14px;
+}
+.icon {
+  font-size: 20px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+.profilePic {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar-option {
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.sidebar-option:hover {
+  background: #e4e6eb;
+}
+
+/* Post Box */
+.postBox {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
+}
+.postText {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.postImages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.postImage {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.successMsg {
+  color: green;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* Contacts */
+.contact img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .inputBox { display: none; }
+  .boxIcons { display: none; }
+  .col-md-3 { display: none; }
+}

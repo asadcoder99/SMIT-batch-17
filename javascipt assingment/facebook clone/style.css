@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f4f7;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: Helvetica;
+}
+
+nav {
+    height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* boxLogo-SearchInput */
+.inputBox {
+  width: 300px;
+  height: 50px;
+}
+
+.inputBox > input {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  padding-left: 20px;
+  font-size: 18px;
+  border: 1px solid gray;
+}
+
+.inputBox > input:focus {
+  outline: none;
+}
+
+/* boxIcons */
+.icon {
+  font-size: 25px;
+  padding: 0px 50px;
+  cursor: pointer;
+}
+
+.icon:hover{
+    color: grey;
+
+}
+.bar {
+  font-size: 25px;
+  padding: 0px 50px;
+  cursor: pointer;
+}
+
+/* BoxIcons-Profile */
+.BoxIcons-Profile > img,
+.left > img, .img-Modal > img, .postCardHeader > div img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Left Side bar Feedbox Right Side bar */
+
+.col {
+  /* height: 100px; */
+}
+
+/* Left  */
+.para, .postCardHeader div p {
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.left {
+  width: 300px;
+  height: 50px;
+}
+.left:hover {
+  background-color: #f2f4f7;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* feed */
+.box {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 130px;
+    width: 100%;
+    border-radius: 20px;
+}
+.img-Modal > button{
+    width: 100%;
+
+}
+
+.btn {
+    text-align: left;
+}
+
+.sessions > p {
+    padding: 5px;
+}
+.sessions > p:hover {
+background-color: #f2f4f7;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.inputBox {
+    width: 100%;
+    height: 50px;
+}
+
+.inputBox > input {
+    width: 100%;
+    height: 100%;
+}
+
+.file > input {
+    padding-left: 10px;
+}
+
+
+/* story-section adding  */
+
+.main-dive-story{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.rightarrow{
+    width: 70px;
+    height: 70px;
+    background-color: lightblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:130px;
+    margin-left: 20px;
+}
+
+.rightarrow > i {
+    font-size: 30px;
+}
+.cards-story{
+    margin-top: 10px;
+    height: 330px;
+    width: 170px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     border-radius: 13px;
+     margin-left: 5px;
+     
+
+}
+
+.cards-story> img {
+     border-radius: 13px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards-story > P {
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+.icon-adds{
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cards-story > .icon-adds{
+    margin: 3px;
+    margin-left: 60px;
+    font-size: 20px;
+}
+ .icon-adds > i {
+    color: white;
+}
+
+/* postCard */
+.postCard {
+  /* height: 600px */
+  /* background-color: black; */
+  margin-top: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+}
+
+.postCardHeader {
+  cursor: pointer;
+}
+
+.imgBox  {
+  height: 500px;
+  /* background-color: red; */
+}
+
+.imgBox > img {
+  height: 100%;
+  width: 100%;
+}
+
+/* add-section adiing */
+
+.add-box{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.add-box > img {
+    width: 70%;
+    height: 70%;
+}
+
+.add-box > p {
+    margin: 5px;
+    font-size: 13px;
+    color: gray;
+}
+
+.add-box > a {
+    text-decoration: none;
+    color: blue;
+   font: 300;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  .icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .inputBox {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .bar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .leftBox, .rightBox {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .inputBox {
+    display: none;
+  }
+}
